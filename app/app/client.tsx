@@ -333,7 +333,7 @@ export default function Client({ user }: ClientComponentProps) {
     );
 
     return (
-        <main className="flex flex-col w-full p-3 sm:p-6 bg-black text-white rounded-2xl">
+        <main className="flex flex-col w-full p-3 sm:p-6 bg-black text-white rounded-none sm:rounded-2xl">
 
             {/* The Navigation Bar */}
             <div className="flex w-full justify-between flex-col sm:flex-row">

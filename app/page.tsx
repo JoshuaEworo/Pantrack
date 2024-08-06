@@ -52,7 +52,7 @@ export default function Login({
   };
 
   return (
-    <main className="flex flex-col w-full p-6 bg-black text-white rounded-2xl">
+    <main className="flex flex-col w-full p-6 bg-black text-white rounded-none sm:rounded-2xl">
       <div className="flex gap-2 items-end mx-auto">
           <span className="logo-closet w-10 h-10"></span>
           <h1 className="text-4xl applefont">Pantrack</h1>
