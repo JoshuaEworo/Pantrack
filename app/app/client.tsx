@@ -402,10 +402,10 @@ export default function Client({ user }: ClientComponentProps) {
             {/* Recipes Display */}
             {showRecipes && (
                 <div className="mt-10 overflow-y-auto h-full px-3 items">
-                    <div className="flex justify-between items-center mb-4">
-                        <h2 className="text-2xl font-semibold">Recipes</h2>
+                    <div className="flex justify-between items-center mb-4 flex-wrap">
+                        <h2 className="text-xl sm:text-2xl font-semibold">Recipes</h2>
                         <button className='rounded-lg border border-white px-4 py-2 hover:bg-neutral-700 flex items-center' onClick={generateRecipe}>
-                            <span className='logo-stars w-6 h-6 mr-3'></span>
+                            <span className='logo-stars w-6 h-6 mr-3 text-xs sm:text-base'></span>
                             Generate New Recipes
                         </button>
                     </div>
@@ -419,12 +419,12 @@ export default function Client({ user }: ClientComponentProps) {
                                 >
                                     ✖
                                 </button>
-                                <h3 className="text-xl font-semibold">{recipe.name}</h3>
-                                <p className="mb-2">{recipe.description}</p>
-                                <h4 className="font-semibold">Ingredients:</h4>
+                                <h3 className="text-lg sm:text-xl font-semibold w-11/12 sm:w-full">{recipe.name}</h3>
+                                <p className="mb-2 text-sm sm:text-base">{recipe.description}</p>
+                                <h4 className="font-semibold text-sm sm:text-base">Ingredients:</h4>
                                 <ul className="list-disc list-inside ml-4 mb-2">
                                     {recipe.ingredients.map((ingredient, index) => (
-                                        <li key={ingredient.id}>{ingredient.name}</li>
+                                        <li className="text-sm sm:text-base" key={ingredient.id}>{ingredient.name}</li>
                                     ))}
                                 </ul>
                                 <h4 className="font-semibold">Instructions:</h4>
