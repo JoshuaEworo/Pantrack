@@ -410,7 +410,7 @@ export default function Client({ user }: ClientComponentProps) {
                         </button>
                     </div>
 
-                    <div className="flex flex-col gap-4">
+                    <div className="flex gap-4 flex-col-reverse">
                         {recipes.map(recipe => (
                             <div key={recipe.id} className="border border-gray-600 p-4 rounded relative">
                                 <button
